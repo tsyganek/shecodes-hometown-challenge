@@ -1,12 +1,11 @@
 body{
-font-family: 'Archivo Black', sans-serif;
 background-color: #202124;
 /* font-family: 'Lora', serif;
 font-family: 'Montserrat', sans-serif; */
 }
 
 .hero{
-background-image: linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(51, 51, 51, 0.73)),url('./images/hero.jpg');
+background-image: linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(51, 51, 51, 0.73)),url('./images/hero2.jpg');
 height: 800px;
 padding: 50px
 }
@@ -19,15 +18,18 @@ h1{
   text-transform: uppercase;
   font-size: 60px;
   color: wheat;
+  font-family: 'Archivo Black', sans-serif;
 }
 
 h2{
   font-size: 35px;
-  color: white
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
 }
 
 .logo{
-  width: 150px
+  width: 150px;
+  margin-bottom: 20px;
 }
 
 .button-container{
@@ -45,27 +47,28 @@ button{
   font-size: 25px;
   font-family: 'Archivo Black', sans-serif;;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-li{
-  list-style: none;
-  color: wheat;
+.benefits{
+  margin: 30px auto;
+  text-align: center;
 }
 
-.reasons {
-  margin: 0 auto;
+
+.benefits img{
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-.reasons-div{
-  display: flex;
-  color: wheat;
+.benefits p{
+  font-size: 16px;
+  font-weight: 700;
   font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
-.reaons-container{
-  padding: 20px;
-  margin: 10px;
-  width: 30%;
+.mural-container{
+  margin: 20px;
 }
-
-
