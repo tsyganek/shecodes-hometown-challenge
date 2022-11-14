@@ -1,5 +1,17 @@
+:root {
+  --background-color: #202124;
+  --hero-font-family: 'Archivo Black', sans-serif;
+  --benefit-font-family: 'Montserrat', sans-serif;
+
+  --main-font-color: #ffffff;
+  --headline-font-color: #f5deb3;
+  --accent-font-color:#000000;
+
+  --border-radius:5px;
+}
+
 body{
-background-color: #202124;
+background-color: var(--background-color);
 }
 
 .hero{
@@ -16,15 +28,15 @@ h1{
   display: inline-block;
   text-transform: uppercase;
   font-size: 60px;
-  color: wheat;
-  font-family: 'Archivo Black', sans-serif;
+  color: var(--headline-font-color);
+  font-family: var(--hero-font-family);
   margin-bottom: 20px;
 }
 
 h2{
   font-size: 35px;
-  color: white;
-  font-family: 'Archivo Black', sans-serif;
+  color: var(--main-font-color);
+  font-family: var(--hero-font-family)
 }
 
 .logo{
@@ -40,13 +52,13 @@ h2{
 a, button{
   display: inline-block;
   border: 2px solid grey;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   box-shadow: 10px 5px 5px grey;
   padding: 30px 30px;
-  background-color: azure;
-  color: black;
+  background-color: var(--headline-font-color);
+  color: var(--accent-font-color);
   font-size: 25px;
-  font-family: 'Archivo Black', sans-serif;;
+  font-family: var(--hero-font-family);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -55,7 +67,7 @@ a:hover, button:hover{
   text-decoration: none;
   cursor: pointer;
   background-color: #202124;
-  color:wheat;
+  color:var(--headline-font-color);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -68,15 +80,15 @@ a:hover, button:hover{
 
 .benefits img{
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   margin-bottom: 20px;
 }
 
 .benefits p{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
+  font-family: var(--benefit-font-family);
+  color: var(--main-font-color);
 }
 
 .mural-container{
@@ -88,19 +100,37 @@ a:hover, button:hover{
   margin: 0 auto;
 }
 
-.form-group {
-  text-align: center !important;
-}
 
 .benefits h2, .form h2{
-  color: wheat;
+  color: var(--headline-font-color);
   text-transform: uppercase;
   line-height: 3;
 }
 
 .hero p{
-  color: white;
+  color: var(--main-font-color);
   font-size: 12px;
   font-weight: 700;
   line-height: 3;
+}
+
+footer p {
+  text-align: center;
+  color: var(--main-font-color);
+  font-family: var(--benefit-font-family);
+  font-size: 10px;
+  line-height: 8;
+}
+
+.form-itself{
+  width: 50%;
+ margin: auto;
+}
+
+.form-check-container{
+  margin: 30px 0;
+}
+
+@media screen {
+  
 }
